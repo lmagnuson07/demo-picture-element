@@ -18,9 +18,21 @@
         <p>The picture element can also be used to offer alternative image formats for different browser support. </p>
         <hr>
         <p>More than one source can be used inside a picture element. Add a third image with a media condition to the picture elements below.</p>
-        <p></p>
 
         <!-- add picture element here -->
+        <picture>
+            <source media="(min-width: 800px)" srcset="img/chocolate-bunnies.jpg">
+            <img src="img/chocolate-bunnies-thumb.jpg" alt="Three chocolate bunnies">
+        </picture>
+        <picture>
+            <source media="(min-width: 800px)" srcset="img/chocolate-eggs.jpg">
+            <img src="img/chocolate-eggs-thumb.jpg" alt="Mini chocolate Easter eggs">
+        </picture>
+        <picture>
+            <source media="(min-width: 800px)" srcset="img/easter.jpg">
+            <img src="img/easter-thumb.jpg" alt="The word Easter written in Easter eggs">
+        </picture>
+
     </section>
 
     
